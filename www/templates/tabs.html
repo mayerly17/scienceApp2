@@ -1,0 +1,36 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<ion-tabs class="tabs-icon-top tabs-color-active-positive">
+  <!-- Dashboard Tab -->
+  <!-- <ion-tab title="ADN" icon-off="fas fa-dna" icon-on="fas fa-dna" href="#/tab/dash" class="pdng">
+    <ion-nav-view name="tab-dash"></ion-nav-view>
+  </ion-tab> -->
+
+  <!-- ADN Tab -->
+  <ion-tab title="ADN" icon-off="fas fa-dna" icon-on="fas fa-dna" href="#/tab/adn">
+    <ion-nav-view name="tab-adn"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Video Tab -->
+  <ion-tab title="Video" icon-off="fab fa-youtube" icon-on="fab fa-youtube" href="#/tab/video">
+    <ion-nav-view name="tab-video"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Infografia Tab -->
+  <ion-tab title="Infografía" icon-off="fas fa-info" icon-on="fas fa-info-circle" href="#/tab/infografia">
+    <ion-nav-view name="tab-infografia"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Tabla nutricional Tab -->
+  <ion-tab title="Tabla nutricional" icon-off="fas fa-table" icon-on="fas fa-table" href="#/tab/tabla-nutri">
+    <ion-nav-view name="tab-tabla"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Juego de memoria Tab -->
+  <ion-tab title="Juego" icon-off="fas fa-gamepad" icon-on="fas fa-gamepad" href="#/tab/juego">
+    <ion-nav-view name="tab-juego"></ion-nav-view>
+  </ion-tab>
+</ion-tabs>

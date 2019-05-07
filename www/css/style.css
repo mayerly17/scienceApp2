@@ -1,0 +1,170 @@
+/* Empty. Add your own CSS if you like */
+/* ADN animation */
+.vista-adn {
+	margin: 0px;
+	background-color: #000;
+	background-image: url('data:image/svg+xml,%3Csvg width="100" height="20" viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z" fill="%239C92AC" fill-opacity="0.2" fill-rule="evenodd"/%3E%3C/svg%3E');
+
+}
+
+canvas {
+	display: block;
+  /*border: 10px solid black;*/
+}
+
+.Titulo {
+	color: #fff;
+}
+
+.tabs-top > .tabs {
+	top: 46px !important;
+}
+
+
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.pdg {
+	padding-top: 5%; 
+}
+
+.info-bg {
+	background: url('../img/infografia.png')center;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 1024px;
+}
+
+/* Diseño del juego*/
+.principal-body,
+.game-body {
+  width: 100%;
+  height: 100%;
+}
+
+.game-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #FF9090;
+  overflow: hidden;
+  font-family: 'Coda', cursive;
+}
+
+.deck {
+  width: 377px;
+  margin: 0 auto;
+  background: #FFFA62;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0 0 #000000;
+}
+.deck .card {
+  height: 75px;
+  width: 75px;
+  background: #FFCF7F;
+  display: inline-block;
+  margin: 0 15px 15px 0;
+  line-height: 140px;
+  font-size: 0;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 8px;
+  vertical-align: top;
+  cursor: pointer;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+  font-family: FontAwesome;
+  line-height: 75px;
+}
+.deck .card:nth-child(4n) {
+  margin: 0 0 15px 0;
+}
+.deck .card:nth-child(n+13) {
+  margin: 0 15px 0 0;
+}
+.deck .card:nth-child(n+13):nth-child(4n) {
+  margin: 0;
+}
+.deck .card.open {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+  background: #89C4FF;
+  cursor: default;
+}
+.deck .card.show {
+  font-size: 23px;
+}
+.deck .card.match {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+  cursor: default;
+  background: #9BCB3C;
+  font-size: 23px;
+}
+.deck .card.notmatch {
+  background: #EE0E51;
+}
+
+#score-panel {
+  text-align: left;
+  width: 345px;
+  margin-bottom: 10px;
+}
+#score-panel .stars {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin: 0 5px 0 0;
+}
+#score-panel .stars li {
+  list-style: none;
+  display: inline-block;
+}
+#score-panel .restart {
+  float: right;
+  cursor: pointer;
+}
+
+*::-moz-selection {
+  background: transparent;
+}
+
+*::selection {
+  background: transparent;
+}
+
+.swal2-overlay {
+  background-color: white;
+}
+
+.col-title {
+  padding-top: 14% !important;
+}
+
+.col-game {
+  padding-top: 42px;
+}
